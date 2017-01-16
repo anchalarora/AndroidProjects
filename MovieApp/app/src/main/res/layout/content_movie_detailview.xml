@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="anchal.com.movieapp.MovieDetailview"
+tools:showIn="@layout/activity_movie_detailview">
+
+<ImageView
+    android:id="@+id/movieImages"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:cropToPadding="false"
+    android:scaleType="fitXY"
+    android:padding="5dp" />
+<LinearLayout
+    android:layout_width="61dp"
+    android:layout_height="9dp"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="21dp"
+    android:layout_marginLeft="150dp"
+    android:orientation="horizontal"
+    android:id="@+id/linearLayout">
+
+    <ImageView
+        android:layout_width="9dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_coach_navi_sel" />
+
+    <ImageView
+        android:layout_width="9dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_coach_navi_nor" />
+
+    <ImageView
+        android:layout_width="9dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_coach_navi_nor" />
+
+    <ImageView
+        android:layout_width="9dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_coach_navi_nor" />
+
+    <ImageView
+        android:layout_width="9dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_coach_navi_nor" />
+</LinearLayout>
+<TextView
+    android:id="@+id/movieTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:text="Movie Title"
+    android:padding="5dp" />
+
+<TextView
+    android:id="@+id/movieDes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:text="Movie Des"
+    android:padding="5dp" />
+
+<RatingBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:isIndicator="true"
+    android:numStars="5"
+    android:id="@+id/ratingBar" />
+
+
+</LinearLayout>
+
+

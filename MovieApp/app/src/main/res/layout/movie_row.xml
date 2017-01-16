@@ -1,0 +1,84 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/image"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+        <TextView
+            android:id="@+id/movie_title"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/image" />
+        <ImageButton
+            android:id="@+id/movieDetail"
+            android:layout_width="10dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/movie_title"
+            android:layout_alignBottom="@+id/image"
+            android:src="@drawable/ic_detail_button" />
+        <!--<ImageView
+            android:id="@+id/leftarrow"
+            android:src="@drawable/ic_arrow_view"
+            android:layout_width="10dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/movie_title"
+            android:layout_alignBottom="@+id/image" />-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/seclayout"
+        android:layout_below="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/release_date"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/movie_adult"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/release_date" />
+    </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
